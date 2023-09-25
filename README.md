@@ -32,8 +32,8 @@ When you are ready to commit to a branch, do the following:
 NOTE: you can find the name of your local branch by running the command "git branch". Remote branch will be the name of the branch you are pushing to.
 
 For example, on my machine I would run:
-   git add .
-   git commit -m "I am making a change to the README"
-   git push origin main:test
+1. git add .
+2. git commit -m "Updated README to include push commands
+3. git push origin main:test
 
 Hope this helps! -Antony
