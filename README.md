@@ -33,7 +33,7 @@ NOTE: you can find the name of your local branch by running the command "git bra
 
 For example, on my machine I would run:
 1. git add .
-2. git commit -m "Updated README to include push commands
+2. git commit -m "Updated README to include push commands"
 3. git push origin main:test
 
 Hope this helps! -Antony
