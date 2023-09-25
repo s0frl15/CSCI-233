@@ -23,4 +23,17 @@ The main branch will contain only files and changes that have first been approve
 
 The sub branches are copies of the main branch which may contain updates that have not been finalized. Always push your changes to a sub branch first, so that we can later determine as a group if those changes are ready to be moved to the main branch.
 
+When you are ready to commit to a branch, do the following:
+1. Make sure your local files are updated (save a backup somewhere just in case)
+2. Go to your terminal in your project directory and type:
+   git add .                                     (This will add all of your changes to the staging area)
+   git commit -m "Commit message goes here"      (Be sure to include a meaningful message indicating what was changed)
+   git push origin <localbranch:remotebranch>
+NOTE: you can find the name of your local branch by running the command "git branch". Remote branch will be the name of the branch you are pushing to.
+
+For example, on my machine I would run:
+   git add .
+   git commit -m "I am making a change to the README"
+   git push origin main:test
+
 Hope this helps! -Antony
