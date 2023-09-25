@@ -26,9 +26,9 @@ The sub branches are copies of the main branch which may contain updates that ha
 When you are ready to commit to a branch, do the following:
 1. Make sure your local files are updated (save a backup somewhere just in case)
 2. Go to your terminal in your project directory and type:
-   git add .                                     (This will add all of your changes to the staging area)
-   git commit -m "Commit message goes here"      (Be sure to include a meaningful message indicating what was changed)
-   git push origin <localbranch:remotebranch>
+   - git add .                                     (This will add all of your changes to the staging area)
+   - git commit -m "Commit message goes here"      (Be sure to include a meaningful message indicating what was changed)
+   - git push origin <localbranch:remotebranch>
 NOTE: you can find the name of your local branch by running the command "git branch". Remote branch will be the name of the branch you are pushing to.
 
 For example, on my machine I would run:
