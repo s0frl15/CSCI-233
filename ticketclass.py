@@ -43,7 +43,7 @@ class Ticket:
 
     # This function currently needs to be changed so that it works
     def sendToDatabase(self):
-        cnx = mysql.connector.connect(user="root", password="bandana",
+        cnx = mysql.connector.connect(user="user", password="password",
                               host="localhost",
                               database="bug_collector")
         cursor = cnx.cursor()
