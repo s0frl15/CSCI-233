@@ -14,7 +14,7 @@ def ticket_priority(ticket):
 sorted_data = sorted(ticket_data, key=ticket_priority)
 
 
-#peinting is just for testing if its sorted
+#printing is just for testing if its sorted
 # one
 print(sorted_data[0]["name"])
 print("\n")
@@ -23,7 +23,7 @@ print("\n")
 for ticket in sorted_data:
     print(ticket["name"])
 
-#correct order
+#correct order, insert the (#) on line 19 after sorted_data
 #Jane Smith(0)
 #Michael Johnson (1)
 #john Doe (2)
