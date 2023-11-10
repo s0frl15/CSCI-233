@@ -14,7 +14,7 @@ def ticket_priority(ticket):
 sorted_data = sorted(ticket_data, key=ticket_priority)
 
 
-
+#peinting is just for testing if its sorted
 # one
 print(sorted_data[1]["name"])
 print("\n")
