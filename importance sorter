@@ -1,0 +1,29 @@
+
+from datetime import datetime
+import ticket
+
+# Accessing the ticket_data from ticket.py
+ticket_data = ticket.ticket_data
+
+# Custom function to assign weights based on the impact and date
+def ticket_priority(ticket):
+    impact = {"Customer": 1, "Developer": 2, "Individual": 3}
+    return (impact[ticket["impact"]], datetime.strptime(ticket["date_and_time"], "%m/%d/%Y, %I:%M%p"))
+
+# Sorting the ticket data based on the impact and date
+sorted_data = sorted(ticket_data, key=ticket_priority)
+
+
+
+# one
+print(sorted_data[1]["name"])
+print("\n")
+
+# all
+for ticket in sorted_data:
+    print(ticket["name"])
+
+#correct order
+#Jane Smith(0)
+#Michael Johnson (1)
+#john Doe (2)
