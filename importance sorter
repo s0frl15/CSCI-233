@@ -16,7 +16,7 @@ sorted_data = sorted(ticket_data, key=ticket_priority)
 
 #peinting is just for testing if its sorted
 # one
-print(sorted_data[1]["name"])
+print(sorted_data[0]["name"])
 print("\n")
 
 # all
