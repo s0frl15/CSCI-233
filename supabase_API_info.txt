@@ -1,0 +1,5 @@
+bGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtodmVqd2pjZmtvZGtjd3RsYmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk2Mjg3NzQsImV4cCI6MjAxNTIwNDc3NH0.htUaM8N3Lw9M_b5WX2yboCBmLqqj4iSOL3j2UZzn0O0
+
+connection string: user=postgres password=[YOUR-PASSWORD] host=db.khvejwjcfkodkcwtlbeo.supabase.co port=5432 dbname=postgres
+
+Password will be provided directly in a discord chat to keep it from being publically viewed. supabase_public_API_key = eyJh
