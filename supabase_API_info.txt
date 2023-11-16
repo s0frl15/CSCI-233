@@ -1,5 +1,17 @@
-bGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtodmVqd2pjZmtvZGtjd3RsYmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk2Mjg3NzQsImV4cCI6MjAxNTIwNDc3NH0.htUaM8N3Lw9M_b5WX2yboCBmLqqj4iSOL3j2UZzn0O0
+
 
 connection string: user=postgres password=[YOUR-PASSWORD] host=db.khvejwjcfkodkcwtlbeo.supabase.co port=5432 dbname=postgres
 
-Password will be provided directly in a discord chat to keep it from being publically viewed. supabase_public_API_key = eyJh
+Password will be provided directly in a discord chat to keep it from being publically viewed. supabase_public_API_key = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtodmVqd2pjZmtvZGtjd3RsYmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk2Mjg3NzQsImV4cCI6MjAxNTIwNDc3NH0.htUaM8N3Lw9M_b5WX2yboCBmLqqj4iSOL3j2UZzn0O0
+
+
+
+Database functions: 
+
+SELECT * FROM get_employee_bug_reports(emp_num). This is a function to call the database and request all the information from a bug report assigned to an agent who's ID matches the emp_num. It will also add the data about the employee handing the bug as well. 
+
+Example for calling the insert_employee() function. select * from insert_employee ('James','Smith','james.smith@bugreport.com','payroll',9797771344,987654)
+
+Function call for inserting a report. select * from insert_report (agent_id_input, 'platform_input', 'software_input', 'error_type_input', 'impact_input text', 'description_input')
+
+Please notice that all string or character inputs must be inside a set of quotes like this: 'input' and only integer type values may be without them. Using double quotes such as "input" will cause failure as well. 
