@@ -1,4 +1,4 @@
-
+Project URL: https://khvejwjcfkodkcwtlbeo.supabase.co
 
 connection string: user=postgres password=[YOUR-PASSWORD] host=db.khvejwjcfkodkcwtlbeo.supabase.co port=5432 dbname=postgres
 
