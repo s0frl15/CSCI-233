@@ -92,7 +92,7 @@ class GUI(Frame):
         self.soft_name = self.softwareEntry.get()
         self.error_type = self.errorTypeEntry.get()
         self.impact = self.impactEntry.get()
-        self.date_time = self.dateTimeEntry.get()
+        # self.date_time = self.dateTimeEntry.get()
         self.email = self.emailEntry.get()
         self.phone_num = self.phoneEntry.get()
     
