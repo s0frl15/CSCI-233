@@ -55,11 +55,11 @@ class GUI(Frame):
         self.impactDropdown.grid()
 
         # Date & Time box
-        self.dateTimeLabel = Label(master, text="Date & Time")
-        self.dateTimeLabel.grid()
-        self.dateTimeEntry = Entry(master)
-        self.dateTimeEntry.insert(0, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        self.dateTimeEntry.grid()
+        # self.dateTimeLabel = Label(master, text="Date & Time")
+        # self.dateTimeLabel.grid()
+        # self.dateTimeEntry = Entry(master)
+        # self.dateTimeEntry.insert(0, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        # self.dateTimeEntry.grid()
 
         # Email box
         self.emailLabel = Label(master, text="Email")

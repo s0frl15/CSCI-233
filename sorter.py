@@ -1,19 +1,18 @@
+from listticketclass import TicketList  
 
-
-from ticketclass import Ticket_List  
 def highest_ticket():
-
-    ticket_list = Ticket_List()
+    ticket_list = TicketList()
 
     customer_list = []
     developer_list = []
     individual_list = []
 
     for ticket in ticket_list:  # sorts based on impact
-        if ticket.impact == "customer":
+        if ticket.impact == 'Customer':
+            print("Added ticket to customer list")
             customer_list.append(ticket)
             customer_list.sort(key=lambda ticket: ticket.date_time)
-        elif ticket.impact == "developer":
+        elif ticket.impact == "Developer":
             developer_list.append(ticket)
             developer_list.sort(key=lambda ticket: ticket.date_time)
         else:
@@ -24,8 +23,8 @@ def highest_ticket():
     sorted_list = customer_list + developer_list + individual_list
 
     # TESTING ONLEY LINE 26-37, 43
-    #print("\nMerged and Sorted List:")
-    #for ticket in sorted_list:
+    # print("\nMerged and Sorted List:")
+    # for ticket in sorted_list:
     #    print(f"{ticket.emp_name}")  #just prints the names in order for testing
 
     #desired output
@@ -40,4 +39,4 @@ def highest_ticket():
     return sorted_list[0]
 
 # TESTING ONLEY
-#highest_ticket()
+highest_ticket()
