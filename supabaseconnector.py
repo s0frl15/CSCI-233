@@ -13,3 +13,5 @@ class SupabaseConnector():
 # READ ME
 # Paste in your private key (ln 8) from supabase before running the program
 # DO NOT upload this file with your private key to github
+
+# You will also need to install supabase library in python by running 'pip install supabase' in your terminal
