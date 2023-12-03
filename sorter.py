@@ -39,4 +39,4 @@ def highest_ticket():
     return sorted_list[0]
 
 # TESTING ONLEY
-highest_ticket()
+# highest_ticket()
