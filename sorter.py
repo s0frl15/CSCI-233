@@ -42,14 +42,20 @@ def highest_ticket():
 # TESTING ONLEY
 # highest_ticket()
 
-def assign_tickets_with_priority():
+
+def assign_tickets():
     employees = EmployeeList()
-    highest_priority_ticket = highest_ticket()
+    sorted_list = highest_ticket()
 
-    for employee in employees:
-        if employee.can_take_ticket(highest_priority_ticket):
-            employee.assign_ticket(highest_priority_ticket)
-            break  # Assign only to the first employee who can take the ticket
+    for ticket in sorted_list:
+        if ticket.priority == 'Customer':
+            employee = employees.get_next_available_employee()
+            if employee is not None:
+                employee.assign_ticket(ticket)
+                print(f"Ticket {ticket.id} assigned to employee {employee.name}")
+                ticket.mark_as_assigned()
+            else:
+                print(f"No available employees to assign ticket {ticket.id}")
+        else:
+            print(f"Skipping ticket {ticket.id} as it doesn't have the highest priority")
 
-# Example usage:
-assign_tickets_with_priority()
