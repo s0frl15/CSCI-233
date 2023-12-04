@@ -40,3 +40,15 @@ def highest_ticket():
 
 # TESTING ONLEY
 # highest_ticket()
+
+def assign_tickets_with_priority():
+    employees = EmployeeList()
+    highest_priority_ticket = highest_ticket()
+
+    for employee in employees:
+        if employee.can_take_ticket(highest_priority_ticket):
+            employee.assign_ticket(highest_priority_ticket)
+            break  # Assign only to the first employee who can take the ticket
+
+# Example usage:
+assign_tickets_with_priority()
